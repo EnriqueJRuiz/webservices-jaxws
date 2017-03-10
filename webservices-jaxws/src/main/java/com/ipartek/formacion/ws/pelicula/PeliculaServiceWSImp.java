@@ -1,5 +1,7 @@
-package com.ipartek.formacion.ws;
+package com.ipartek.formacion.ws.pelicula;
 
+import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import javax.annotation.Resource;
@@ -12,8 +14,8 @@ import javax.xml.ws.WebServiceContext;
 import javax.xml.ws.handler.MessageContext;
 
 import com.ipartek.formacion.pojo.Pelicula;
-import com.ipartek.formacion.service.PeliculaSerciveImp;
-import com.ipartek.formacion.service.PeliculaService;
+import com.ipartek.formacion.service.pelicula.PeliculaSerciveImp;
+import com.ipartek.formacion.service.pelicula.PeliculaService;
 
 @WebService(serviceName="peliculasservice",
 portName="",
@@ -48,6 +50,20 @@ public class PeliculaServiceWSImp {
 		//WS-Security
 		//Con esto recogemos los datos de la cabecera
 		MessageContext contextoMensajes = webServiceContext.getMessageContext();
+		Map<?,?> encabezados = (Map<?,?>) contextoMensajes.get(MessageContext.HTTP_REQUEST_HEADERS);
+		//el nombre del atributo del "encabezados" se llama asi porque sei se decide
+		//es una lista porque lo decidimos
+		List<?> session = (List<?>) encabezados.get("sessionId");
+		//cargamos el identificador
+		String sessionid = "ipsession";
+		
+		if(session!=null){
+			//aqui hariamos o produciriamos cualquier validación compleja
+			if(sessionid.equals(session.get(0).toString())){
+				valida=true;
+			}
+		}
+		
 		return valida;
 	}
 	

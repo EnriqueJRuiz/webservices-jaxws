@@ -1,4 +1,4 @@
-package com.ipartek.formacion.ws;
+package com.ipartek.formacion.ws.pelicula;
 
 import java.io.Serializable;
 

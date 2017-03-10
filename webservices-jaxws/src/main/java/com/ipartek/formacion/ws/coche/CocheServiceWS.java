@@ -1,4 +1,4 @@
-package com.ipartek.formacion.ws;
+package com.ipartek.formacion.ws.coche;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;

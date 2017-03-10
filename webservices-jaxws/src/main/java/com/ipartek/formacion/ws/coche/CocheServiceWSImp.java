@@ -1,4 +1,4 @@
-package com.ipartek.formacion.ws;
+package com.ipartek.formacion.ws.coche;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,8 +7,8 @@ import java.util.Map;
 import javax.jws.WebService;
 
 import com.ipartek.formacion.pojo.Coche;
-import com.ipartek.formacion.service.CocheService;
-import com.ipartek.formacion.service.CocheServiceImp;
+import com.ipartek.formacion.service.coche.CocheService;
+import com.ipartek.formacion.service.coche.CocheServiceImp;
 
 @WebService(serviceName="cocheservice", 
 wsdlLocation = "Cocheservice", 

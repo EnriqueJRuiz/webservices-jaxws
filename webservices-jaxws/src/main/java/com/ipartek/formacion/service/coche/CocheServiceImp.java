@@ -1,4 +1,4 @@
-package com.ipartek.formacion.service;
+package com.ipartek.formacion.service.coche;
 
 import java.util.HashMap;
 import java.util.Map;

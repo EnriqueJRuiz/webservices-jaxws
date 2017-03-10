@@ -1,4 +1,4 @@
-package com.ipartek.formacion.ws;
+package com.ipartek.formacion.ws.alumno;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,8 +7,8 @@ import java.util.Map;
 import javax.jws.WebService;
 
 import com.ipartek.formacion.pojo.Alumno;
-import com.ipartek.formacion.service.AlumnoService;
-import com.ipartek.formacion.service.AlumnoServiceImp;
+import com.ipartek.formacion.service.alumno.AlumnoService;
+import com.ipartek.formacion.service.alumno.AlumnoServiceImp;
 
 @WebService(endpointInterface="com.ipartek.formacion.ws.AlumnoServiceWS")//A que clase apunta el interfaz
 public class AlumnoServiceWSImp implements AlumnoServiceWS {

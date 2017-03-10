@@ -1,4 +1,4 @@
-package com.ipartek.formacion.service;
+package com.ipartek.formacion.service.pelicula;
 
 import java.util.Date;
 import java.util.Iterator;

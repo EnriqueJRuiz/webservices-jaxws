@@ -91,7 +91,7 @@
 	                      <goal>wsgen</goal>
 	                  </goals>
 	                  <configuration>
-	                      <sei>com.ipartek.formacion.ws.CocheServiceWSImp</sei>
+	                      <sei>com.ipartek.formacion.ws.coche.CocheServiceWSImp</sei>
 	                      <genWsdl>true</genWsdl>
 	                       <keep>true</keep>
 	                       <resourceDestDir>${basedir}/src/main/resources/wsdl</resourceDestDir>

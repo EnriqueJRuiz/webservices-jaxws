@@ -4,15 +4,20 @@
   version="2.0">
   
   	<endpoint name="HelloWorldWSImp" 
-  	implementation="com.ipartek.formacion.ws.HelloWorldWSImp"
+  	implementation="com.ipartek.formacion.ws.helloworld.HelloWorldWSImp"
   	url-pattern="/helloworldws" />
   
   	<endpoint name="cochews"
-  	implementation="com.ipartek.formacion.ws.CocheServiceWSImp"
+  	implementation="com.ipartek.formacion.ws.coche.CocheServiceWSImp"
   	url-pattern="/cochews"/>
   	
   	<endpoint name="alumnows"
-  	implementation="com.ipartek.formacion.ws.AlumnoServiceWSImp"
+  	implementation="com.ipartek.formacion.ws.alumno.AlumnoServiceWSImp"
   	url-pattern="/alumnows"/>
+  	
+  	<endpoint name="peliculaws"
+  	implementation="com.ipartek.formacion.ws.pelicula.PeliculaServiceWSImp"
+  	url-pattern="/peliculaws"/>
+  	
   	
   </endpoints>

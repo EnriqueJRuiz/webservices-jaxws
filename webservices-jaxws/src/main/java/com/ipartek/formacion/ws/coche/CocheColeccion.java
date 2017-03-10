@@ -1,4 +1,4 @@
-package com.ipartek.formacion.ws;
+package com.ipartek.formacion.ws.coche;
 
 import java.io.Serializable;
 import java.util.ArrayList;
